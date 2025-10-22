@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Q1 Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: right;
+    }
+
+    header a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .intro {
+      background-color: #f5cccc; /* light red background */
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .intro h1 {
+      margin-bottom: 10px;
+    }
+
+    .intro h1 span {
+      color: crimson;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+    }
+
+    h2.section-title {
+      background-color: #e57373; /* red */
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 5px;
+    }
+
+    .works {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .work-item {
+      border: 1px dotted black;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      background-color: #fceaea; /* very light red */
+      border-radius: 8px;
+      align-items: center;
+    }
+
+    .work-text {
+      flex: 1;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: left;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+   
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#about">About Me</a>
+    <a href="#works">My Works</a>
+    <a href="#contact">Contact Me</a>
+  </header>
+
+  <div class="intro">
+    <img src="chibi2.png" style="width: 100px; height: auto;">
+    <h1>Hello, I'm <span>Lucas Tanglao</span></h1>
+    <h3>A happy person</h3>
+  </div>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hi, I’m Lucas — a happy, curious learner and aspiring web developer.
+I love creating clean and creative websites that bring ideas to life in a fun and simple way. Whether I’m exploring new coding tricks or playing around with design tools, I’m always excited to learn and build something cool. My goal is to create web experiences that not only work well but leave people smiling.</p>
+  </section>
+
+  <section id="works">
+    <h2 class="section-title">My Works</h2>
+    <div class="works">
+      <div class="work-item">
+        <div class="work-text">
+          <h3>My Top 3 Favorite Movies</h3>
+          <ul>
+            <img src="Favorite Movies.png" style="width: 300px; height: auto;">
+            <li>✓ HTML & CSS Projects</li>
+            <li>✓ Personal Blog</li>
+            <li>✓ List, Links, Images</li>
+          </ul>
+        </div>
+      </div>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form">
+      <label>Your Name:</label>
+      <input type="text" placeholder=" John Doe">
+
+      <label>Your Email:</label>
+      <input type="email" placeholder="something@email.com">
+
+      <label>How did you find me?</label><br>
+      <input type="checkbox"> Facebook
+      <input type="checkbox"> Google
+      <input type="checkbox"> Friends
+      <br><br>
+
+      <label>Services Interested In:</label><br>
+      <input type="checkbox"> Web Design
+      <input type="checkbox"> Graphic Design
+      <input type="checkbox"> Robotics
+      <br><br>
+
+      <label>Rate my Portfolio:</label>
+      <select>
+        <option>-- Select Rating --</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+
+      <label>Any Feedback?</label>
+      <textarea placeholder="Feedback here..."></textarea>
+
+      <button class="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Lucas Tanglao. All rights reserved.
+  </footer>
+
+</body>
+</html>
